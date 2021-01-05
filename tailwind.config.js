@@ -26,6 +26,8 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      primary: '#edd2b3',
+      semiblack: '#252525',
     },
     spacing: {
       px: '1px',
@@ -162,6 +164,14 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      poppins: [
+        'Poppins',
+        'sans-serif'
+      ],
+      seaweeds: [
+        'Seaweed Script',
+        'sans-serif'
+      ],
       sans: [
         'ui-sans-serif',
         'system-ui',
