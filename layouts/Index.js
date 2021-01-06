@@ -4,7 +4,7 @@ import Head from "next/head"
 
 const Index = () => {
     return (
-        <div className="bg-black">
+        <div className="">
           <Head>
             <title>{'World' ?? props.title}</title>
             <link rel="preconnect" href="https://fonts.gstatic.com"/>

@@ -30,6 +30,7 @@ module.exports = {
       semiblack: '#252525',
     },
     spacing: {
+      '10/1':'10%',
       'bar': '0.15rem',
       px: '1px',
       0: '0px',
