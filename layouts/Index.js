@@ -1,9 +1,10 @@
 import Navbar from "../components/Navbar"
+import Slick from "../components/Slick"
 import Head from "next/head"
 
 const Index = () => {
     return (
-        <>
+        <div className="bg-black">
           <Head>
             <title>{'World' ?? props.title}</title>
             <link rel="preconnect" href="https://fonts.gstatic.com"/>
@@ -12,7 +13,8 @@ const Index = () => {
             <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
           </Head>
           <Navbar/>  
-        </>
+          <Slick/>
+        </div>
     )
 }
 
