@@ -30,6 +30,7 @@ module.exports = {
       semiblack: '#252525',
     },
     spacing: {
+      '96/2':'48%',
       '10/1':'10%',
       'bar': '0.15rem',
       px: '1px',
@@ -838,7 +839,7 @@ module.exports = {
     ringOpacity: ['responsive', 'focus-within', 'focus'],
     ringWidth: ['responsive', 'focus-within', 'focus'],
     rotate: ['responsive', 'hover', 'focus', 'group-hover'],
-    scale: ['responsive', 'hover', 'focus'],
+    scale: ['responsive', 'hover', 'focus', 'group-hover'],
     skew: ['responsive', 'hover', 'focus'],
     space: ['responsive'],
     stroke: ['responsive'],

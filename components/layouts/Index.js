@@ -2,6 +2,9 @@ import Navbar from "../Navbar"
 import Banner from "../Banner"
 import Head from "next/head"
 import Products from "../Products"
+import MediumCard from "../atoms/MediumCard"
+import Cards from "../Cards"
+import Categories from "../Categories"
 
 const Index = () => {
     return (
@@ -16,6 +19,8 @@ const Index = () => {
           <Navbar/>  
           <Banner/>
           <Products/>
+          <Cards/>
+          <Categories/>
         </div>
     )
 }
