@@ -5,7 +5,7 @@ const Navbar = () => {
 
     return (
         <nav className="bg-primary text-semiblack z-50">
-            <div className="lg:container lg:mx-auto flex lg:flex-row lg:px-0 px-3 flex-col py-4">
+            <div className="lg:container lg:mx-auto flex lg:flex-row lg:px-0 px-3 flex-col py-2 lg:py-4">
                 <div className="flex items-center justify-between lg:mb-0">
                     <h1 className="lg:text-5xl text-2xl text-semiblack font-seaweeds">Fetur</h1>
                     <div className="flex items-center lg:hidden">

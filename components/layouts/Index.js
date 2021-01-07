@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar"
-import Slick from "../components/Slick"
+import Banner from "../components/Slick"
 import Head from "next/head"
 
 const Index = () => {
@@ -13,7 +13,7 @@ const Index = () => {
             <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
           </Head>
           <Navbar/>  
-          <Slick/>
+          <Banner/>
         </div>
     )
 }
