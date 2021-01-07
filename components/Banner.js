@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Hero from './molecules/Hero';
+import Hero from './atoms/Hero';
 import { ArrowLeft, ArrowRight } from '../public/static/svg';
 
 
@@ -19,7 +19,7 @@ const Slick = () => {
         customPaging: function (i) {
           return (
             <a className="">
-              <span className="mx-1 -mt-5 rounded-l-full rounded-r-full h-3 w-3 block cursor-pinter transition-all "></span>
+              <span className="mx-1 md:-mt-5 -mt-3 rounded-l-full rounded-r-full h-1 w-1 md:h-3 md:w-3 block cursor-pinter transition-all "></span>
             </a>
           );
         },
@@ -30,7 +30,6 @@ const Slick = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
-        infinite: true,
         responsive:[
                 {
                     

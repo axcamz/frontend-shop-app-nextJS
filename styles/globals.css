@@ -22,4 +22,5 @@
 .slick-dots .slick-active span {
 @apply bg-primary rounded-l-full rounded-r-full;
 }
-  
+.slick-list, .slick-track { 
+    touch-action: none !important; }

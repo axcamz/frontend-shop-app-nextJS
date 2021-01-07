@@ -1,10 +1,11 @@
-import Navbar from "../components/Navbar"
-import Banner from "../components/Slick"
+import Navbar from "../Navbar"
+import Banner from "../Banner"
 import Head from "next/head"
+import Products from "../Products"
 
 const Index = () => {
     return (
-        <div className="">
+        <div className="pb-20">
           <Head>
             <title>{'World' ?? props.title}</title>
             <link rel="preconnect" href="https://fonts.gstatic.com"/>
@@ -14,6 +15,7 @@ const Index = () => {
           </Head>
           <Navbar/>  
           <Banner/>
+          <Products/>
         </div>
     )
 }
