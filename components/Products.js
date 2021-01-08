@@ -4,7 +4,7 @@ import {useState} from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { ArrowLeft, ArrowNarrowRight, ArrowRight } from "../public/static/svg";
+import { ArrowLeft, ArrowNarrowRight, ArrowRight } from "./atoms/icons/index";
 
 
 const Products = () => {
@@ -66,21 +66,42 @@ const Products = () => {
                 </a>
             </div>
             <Slider infinite={false}  {...settings} ref={setSlideRef}>
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
+                <CardProduct
+                    src="/static/images/products/chair.png"
+                    productName="Chair"
+                    price={300}
+                    inWishlist={true}
+                />
+                <CardProduct
+                    src="/static/images/products/dining-chair.png"
+                    productName="Dining Chair"
+                    price={100}
+                    inWishlist={false}
+                />
+                <CardProduct
+                    src="/static/images/products/gaming-chair.png"
+                    productName="Gaming Chair"
+                    price={2000}
+                    inWishlist={true}
+                />
+                <CardProduct
+                    src="/static/images/products/gaming-chair.jpg"
+                    productName="Gaming Chair"
+                    price={100}
+                    inWishlist={false}
+                />
+                <CardProduct
+                    src="/static/images/products/office-chair.png"
+                    productName="Office Chair"
+                    price={300}
+                    inWishlist={false}
+                />
             </Slider>
             <div className="absolute hidden lg:block top-1/2 transform -left-1 -translate-y-1/2 cursor-pointer" onClick={slideRef?.slickPrev}>
-                <ArrowLeft className="h-6 lg:h-10 text-primary"/>
+                <ArrowLeft className="h-6 lg:h-10 text-gray-800"/>
             </div>
             <div className="absolute hidden lg:block top-1/2 transform -right-1 -translate-y-1/2 cursor-pointer" onClick={slideRef?.slickNext}>
-                <ArrowRight className="h-6 lg:h-10 text-primary"/>
+                <ArrowRight className="h-6 lg:h-10 text-gray-800"/>
             </div>
         </div>
     )

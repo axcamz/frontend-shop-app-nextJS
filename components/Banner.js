@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Hero from './atoms/Hero';
-import { ArrowLeft, ArrowRight } from '../public/static/svg';
+import { ArrowLeft, ArrowRight } from './atoms/icons/index';
 
 
 const Slick = () => {
@@ -56,36 +56,31 @@ const Slick = () => {
     const [sliderRef, setSliderRef] = useState(null);
 
     return (
-        <div className="relative py-5 md:py-8  ">  
+        <div className="relative py-5 md:py-8">  
             <Slider
                 {...settings}
                 arrows={false}
                 ref={setSliderRef}
             >
-                <Hero src="/static/images/hero1.jpg">
-                    <span className="lg:text-7xl text-2xl font-bold">30%</span>
-                    <span className="text-xl pl-4">Cashback on Your Fisrt Purchase</span>
-                </Hero>
                 <Hero
-                    src="/static/images/hero2.jpg"
+                    src="/static/images/banners/hero1.jpg"
                 />
                 <Hero
-                    src="/static/images/hero3.jpg"
+                    src="/static/images/banners/hero2.jpg"
+                />
+                <Hero
+                    src="/static/images/banners/hero3.jpg"
                 />
             </Slider>  
-            <div className="flex md:px-28 lg:px-28 px-4  w-full justify-between absolute top-1/2 transform -translate-y-1/2">
-                <div onClick={sliderRef?.slickPrev}>
-                    <ArrowLeft 
-                        className="h-9 w-9 text-white fill-current icon-shadow cursor-pointer"
-                        fill="#fff"
-                    />
-                </div>
-                <div onClick={sliderRef?.slickNext}>
-                    <ArrowRight
-                        className="h-9 w-9 text-white filter icon-shadow cursor-pointer"
-                        fill="#fff"
-                    />
-                </div>
+            <div className="absolute left-3 md:left-16 lg:left-28 top-1/2 transform -translate-y-1/2" onClick={sliderRef?.slickPrev}>
+                <ArrowLeft 
+                    className="h-9 w-9 text-primary fill-current icon-shadow cursor-pointer"
+                />
+            </div>
+            <div className="absolute right-3 md:right-16 lg:right-28 top-1/2 transform -translate-y-1/2" onClick={sliderRef?.slickNext}>
+                <ArrowRight
+                    className="h-9 w-9 text-primary filter icon-shadow cursor-pointer"
+                />
             </div>
         </div>
     )
