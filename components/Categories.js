@@ -24,7 +24,7 @@ const Categories = () => {
                     src="/static/images/categories/sleeping-area.png"
                 />
                 <Category 
-                    className="h-52 col-span-8 row-span-1 md:col-span-2 md:row-span-1"
+                    className="h-52 col-span-4 row-span-1 md:col-span-2 md:row-span-1"
                     src="/static/images/categories/components.png"
                 />
             </div>

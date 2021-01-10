@@ -27,6 +27,7 @@ module.exports = {
       purple: colors.violet,
       pink: colors.pink,
       primary: '#edd2b3',
+      secondary: '#f0e8df',
       semiblack: '#252525',
     },
     spacing: {
@@ -593,6 +594,7 @@ module.exports = {
       180: '180deg',
     },
     scale: {
+      '-1': '-1',
       0: '0',
       50: '.5',
       75: '.75',
